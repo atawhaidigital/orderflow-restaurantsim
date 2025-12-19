@@ -47,22 +47,18 @@ The project is under active development and currently focuses on:
 # Set up your scenario
 	Decide which delivery apps you want to include (UberEats, Deliveroo, etc.)
 	Enter the total monthly orders across all delivery channels (in-store, delivery apps, expected self-delivery orders if you are running self-delivery)
+	Assign a percentage of total orders to each channel. Percentages must sum to 100%.
 
-Assign a percentage of total orders to each channel. Percentages must sum to 100%.
-  # For example: 
-    Total monthly orders = 1,000
+# For example: 
+	Total monthly orders = 1,000
     UberEats = 50% → 500 orders
     Deliveroo = 30% → 300 orders
     DoorDash = 20% → 200 orders  
-
-  # Formula:
-  Channel = (Orders for that channel/total monthly orders) x 100
-
-  UberEats = (500/1000) x 100 = 50%
-
-  Check: 50% + 30% + 20% = 100% ✅
-
-This ensures the simulator distributes orders correctly and calculates channel profitability accurately
+# Formula:
+	Channel = (Orders for that channel/total monthly orders) x 100
+	UberEats = (500/1000) x 100 = 50%
+	Check: 50% + 30% + 20% = 100% ✅
+	This ensures the simulator distributes orders correctly and calculates channel profitability accurately
 
 # Run the simulation
 	The simulator calculates profit per channel, factoring in commission fees and other assumptions 
